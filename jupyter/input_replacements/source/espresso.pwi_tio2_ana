@@ -1,0 +1,40 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   prefix           = 'tio2_ana_PBESOL'
+   pseudo_dir       = '/users/sol/abuccheri/rutgers_pseudos/pbesol'
+/
+&SYSTEM
+   ecutwfc          = 120.0
+   ntyp             = 2
+   nat              = 6
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-06
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Ti 47.867 ti_pbesol_v1.4.uspp.F.UPF
+O 15.999 o_pbesol_v1.2.uspp.F.UPF
+
+K_POINTS automatic
+12 12 12  0 0 0
+
+CELL_PARAMETERS angstrom
+-2.77867331500000 2.77867331500000 2.77867331500000
+2.77867331500000 -2.77867331500000 2.77867331500000
+2.77867331500000 2.77867331500000 -2.77867331500000
+
+ATOMIC_POSITIONS angstrom
+Ti 0.0000000000 0.0000000000 2.7786733150 
+Ti 2.7786733150 0.0000000000 1.3893366575 
+O 2.7786733150 0.0000000000 2.5364452474 
+O 0.0000000000 -0.0000000000 3.9257819049 
+O 2.7786733150 -0.0000000000 0.2422280676 
+O 0.0000000000 -0.0000000000 1.6315647251 
+

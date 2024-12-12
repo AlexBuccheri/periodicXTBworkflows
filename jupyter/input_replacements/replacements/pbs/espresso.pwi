@@ -1,0 +1,35 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   prefix           = 'pbs_PBESOL'
+   pseudo_dir       = '/users/sol/abuccheri/rutgers_pseudos/pbesol'
+/
+&SYSTEM
+   ecutwfc          = 120.0
+   ntyp             = 2
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-06
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Pb 207.2 pb_pbesol_v1.uspp.F.UPF
+S 32.06 s_pbesol_v1.4.uspp.F.UPF
+
+K_POINTS automatic
+10 10 10  0 0 0
+
+CELL_PARAMETERS angstrom
+1.18311452442225 3.34635321255708 2.04921446747203 
+1.18311452442225 3.34635321255708 -2.04921446747202 
+-2.36622904884450 3.34635321255708 -0.00000000000000 
+
+ATOMIC_POSITIONS angstrom
+Pb 0.00000000000000 0.00000000000000 0.00000000000000 
+S 0.00000000000000 5.01952981883562 0.00000000000000 

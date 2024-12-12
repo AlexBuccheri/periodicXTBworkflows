@@ -1,0 +1,13 @@
+# IDE and system files
+.pytest_cache/
+__pycache__/
+/tb_lite.egg-info
+/.devcontainer
+/.idea
+.DS_Store
+docker_venv
+/tb_benchmarking.egg-info
+*.eps
+.ipynb_checkpoints
+# Should just be used for running calcs, not storing results
+/outputs

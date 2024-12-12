@@ -1,0 +1,1 @@
+This folder contains the PBE+TS optimised geometries of the X23 database. The file format is the number of atoms in unit cell or molecule, the unit cell parameters and then the cartersian coordinates and PBE Hirshfeld volumes. Files with _g denote the isolated molecules, for which a unit cell of 100 Angstroms cubed is specified.

@@ -1,0 +1,38 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   prefix           = 'zinc_oxide_PBESOL'
+   pseudo_dir       = '/users/sol/abuccheri/rutgers_pseudos/pbesol'
+/
+&SYSTEM
+   ecutwfc          = 120.0
+   ntyp             = 2
+   nat              = 4
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-06
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Zn 65.38 zn_pbesol_v1.uspp.F.UPF
+O 15.999 o_pbesol_v1.2.uspp.F.UPF
+
+K_POINTS automatic
+10 10 6  0 0 0
+
+CELL_PARAMETERS angstrom
+-1.64455124000000 -2.84844630333040 -0.00000000000000
+-1.64455124000000 2.84844630333040 0.00000000000000
+0.00000000000000 0.00000000000000 -5.30682100000000
+
+ATOMIC_POSITIONS angstrom
+Zn -1.6445512400 -0.9494821011 -5.3039128621 
+Zn -1.6445512400 0.9494821011 -2.6505023621 
+O -1.6445512400 -0.9494821011 -3.2914920434 
+O -1.6445512400 0.9494821011 -0.6380815434 
+
